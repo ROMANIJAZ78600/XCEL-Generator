@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Excel Generator</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Excel Generator</h1>
+
+      <div class="buttons">
+        <button id="addColumnBtn">Add Column</button>
+        <button id="addRowBtn">Add Row</button>
+        <button id="downloadBtn">Download Excel</button>
+      </div>
+
+      <div class="table-container">
+        <table id="dataTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td contenteditable="true">Ali</td>
+              <td contenteditable="true">ali@gmail.com</td>
+              <td><button class="delete-row">Delete</button></td>
+            </tr>
+
+            <tr>
+              <td contenteditable="true">Ahmed</td>
+              <td contenteditable="true">ahmed@gmail.com</td>
+              <td><button class="delete-row">Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
